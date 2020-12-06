@@ -10,3 +10,5 @@ class Professor < Funcionario
         puts("Funcionario #{@nome} - Código #{@codigo_funcionario} - Férias: #{@ferias} - Disciplina #{@disciplina}")
     end
 end
+
+#Teste
