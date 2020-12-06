@@ -1,7 +1,7 @@
 class Funcionario 
     attr_reader :ferias, :data_inicio_ferias, :data_fim_ferias
     attr_accessor :nome, :ferias, :codigo_funcionario  
-
+    
     def initialize(nome, codigo_funcionario)    
         @nome = nome    
         @codigo_funcionario = codigo_funcionario    
@@ -16,9 +16,5 @@ class Funcionario
     def encerra_ferias()
         @ferias = false
         @data_fim_ferias = Time.now()
-    end
-
-    def imprime()
-        puts("Funcionario #{@nome} - Código #{@codigo_funcionario} - Férias: #{@ferias}")
     end
 end
