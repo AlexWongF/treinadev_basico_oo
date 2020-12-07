@@ -7,6 +7,6 @@ class Professor < Funcionario
     end
 
     def imprime()
-        puts("Funcionario #{@nome} - Código #{@codigo_funcionario} - Férias: #{@ferias} - Disciplina #{@disciplina}")
+        puts("Funcionario #{nome} - Código #{codigo_funcionario} - Férias: #{ferias} - Disciplina #{disciplina}")
     end
 end
