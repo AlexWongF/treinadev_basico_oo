@@ -11,13 +11,13 @@ class Funcionario
     end
 
     def inicia_ferias()
-        ferias = true
-        data_inicio_ferias = Time.now()
+        self.ferias = true
+        self.data_inicio_ferias = Time.now()
     end
 
     def encerra_ferias()
-        ferias = false
-        data_fim_ferias = Time.now()
+        self.ferias = false
+        self.data_fim_ferias = Time.now()
     end
 
     def imprime()
