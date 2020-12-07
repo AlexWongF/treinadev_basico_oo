@@ -9,16 +9,20 @@ class Funcionario
     end
 
     def inicia_ferias()
-        @ferias = true
-        @data_inicio_ferias = Time.now()
+        ferias = true
+        data_inicio_ferias = Time.now()
     end
 
     def encerra_ferias()
-        @ferias = false
-        @data_fim_ferias = Time.now()
+        ferias = false
+        data_fim_ferias = Time.now()
     end
 
     def imprime()
         puts("Funcionario #{@nome} - Código #{@codigo_funcionario} - Férias: #{@ferias}")
     end
+
+    private
+
+    attr:writer :ferias, :data_inicio_ferias, :data_fim_ferias
 end

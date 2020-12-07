@@ -10,14 +10,18 @@ class Turma
     end
 
     def adiciona_aluno(aluno)
-        @alunos << aluno
+        alunos << aluno
     end
 
     def remove_aluno(aluno)
-        @alunos.delete(aluno)
+        alunos.delete(aluno)
     end
         
     def total_alunos()
-        return @alunos.count()
+        return alunos.count()
     end
+
+    private
+
+    attr_writer :alunos
 end
